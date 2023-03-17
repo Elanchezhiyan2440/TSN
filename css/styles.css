@@ -22,6 +22,11 @@ body {
   background-position: center;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 @media screen and (min-width : 800px) {
   body{
     background-image: none;
@@ -136,6 +141,15 @@ h4 {
 .footer {
   height: 7.5rem;
   background-color: #100F0F;
+}
+
+.footer_link{
+  font-size:0.85rem ;
+}
+
+.footer_items{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width: 800px){
