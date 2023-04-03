@@ -6,14 +6,14 @@
   --color-font-black: #1e1e1e;
   --color-font-white: rgba(255, 255, 255, 0.85);
   --color-primary: #6b8763;
-  --color-secondary: rgba(32,73,27,0.85);
+  --color-secondary: rgba(32, 73, 27, 0.85);
 }
 
 /*HTML font and size declaration*/
 
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif       ;
+  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -21,13 +21,13 @@ body {
   background-position: center;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-@media screen and (min-width : 800px) {
-  body{
+@media screen and (min-width: 800px) {
+  body {
     background-image: none;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,6 +62,32 @@ h4 {
   width: 4rem;
 }
 
+.button:hover {
+  background-color: #678c5d;
+}
+
+.btn {
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  color: var(--color-font-white);
+  font-size: 0.4rem;
+  font-weight: 550;
+  height: 0.5rem;
+  justify-content: center;
+  padding: 0.2rem;
+  text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 4rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+  background-color: #678c5d;
+}
+
 /* Cards */
 
 .card {
@@ -90,24 +116,6 @@ h4 {
   display: flex;
 }
 
-.btn {
-  align-items: center;
-  background-color: var(--color-primary);
-  border-radius: 20px;
-  color: var(--color-font-white);
-  font-size: 0.4rem;
-  font-weight: 550;
-  height: 0.5rem;
-  justify-content: center;
-  padding: 0.2rem;
-  text-decoration: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-  width: 4rem;
-  padding: 0.5rem 1rem;
-}
-
 /* header */
 
 .header {
@@ -115,21 +123,21 @@ h4 {
   height: 10rem;
 }
 
-.header_name{
-  color: rgba(255, 255, 255, 0.70);
+.header_name {
+  color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
-  font-weight:600;
+  font-weight: 600;
   font-size: 6rem;
   letter-spacing: 0.3rem;
   display: inline-block;
   margin: 1rem;
 }
 
-@media screen and (min-width: 800px){
-  .header{
+@media screen and (min-width: 800px) {
+  .header {
     height: 6rem;
   }
-  .header_name{
+  .header_name {
     font-size: 3rem;
     margin-left: 2rem;
   }
@@ -139,59 +147,57 @@ h4 {
 
 .footer {
   height: 7.5rem;
-  background-color: #100F0F;
+  background-color: #100f0f;
 }
 
-.footer_link{
-  font-size:1rem ;
+.footer_link {
+  font-size: 1rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 1.5rem;
 }
 
-.footer_items{
+.footer_items {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-content: space-between;
   align-content: space-between;
   width: 100%;
   height: 100%;
-  grid-template-areas: 
-  "top-left top-right"
-  "bottom-left bottom-right";
+  grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
 }
 
-.footer_items a:nth-child(1){
+.footer_items a:nth-child(1) {
   grid-area: top-left;
   justify-self: start;
 }
 
-.footer_items a:nth-child(2){
+.footer_items a:nth-child(2) {
   grid-area: top-right;
   justify-self: end;
 }
 
-
-.footer_items a:nth-child(3){
+.footer_items a:nth-child(3) {
   grid-area: bottom-left;
   justify-self: start;
   white-space: nowrap;
 }
 
-.footer_items a:nth-child(4){
+.footer_items a:nth-child(4) {
   grid-area: bottom-right;
   justify-self: end;
   white-space: nowrap;
 }
 
-
-@media screen and (min-width: 800px){
-  .footer{
+@media screen and (min-width: 800px) {
+  .footer {
     height: 15rem;
   }
 
-  .footer_link{
+  .footer_link {
     font-size: 2rem;
   }
 }
