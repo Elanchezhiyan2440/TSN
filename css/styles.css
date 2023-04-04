@@ -51,40 +51,18 @@ h4 {
   border-radius: 20px;
   color: var(--color-font-white);
   display: flex;
-  font-size: 0.4rem;
+  font-size: 0.6rem;
   font-weight: 600;
-  height: 0.5rem;
+  height: 1.5rem;
   justify-content: center;
   padding: 0.5rem;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
-  width: 4rem;
+  width: 7rem;
 }
 
 .button:hover {
-  background-color: #678c5d;
-}
-
-.btn {
-  align-items: center;
-  background-color: var(--color-primary);
-  border-radius: 20px;
-  color: var(--color-font-white);
-  font-size: 0.4rem;
-  font-weight: 550;
-  height: 0.5rem;
-  justify-content: center;
-  padding: 0.2rem;
-  text-decoration: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-  width: 4rem;
-  padding: 0.5rem 1rem;
-}
-
-.btn:hover {
   background-color: #678c5d;
 }
 
@@ -92,8 +70,8 @@ h4 {
 
 .card {
   box-shadow: var(--box-shadow);
-  display: flex-block;
-  margin: 0.3rem auto;
+  display: flex;
+  margin: 0.3rem 1rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -200,4 +178,18 @@ h4 {
   .footer_link {
     font-size: 2rem;
   }
+}
+
+/* Intro card */
+
+.intro_card_image{
+  height: 15rem;
+  width: 12rem;
+  padding: 2.5rem;
+  border-radius: 5%;
+}
+
+.intro_details{
+  display: flex;
+  flex-direction: column;
 }
