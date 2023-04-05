@@ -55,6 +55,7 @@ h4 {
   font-weight: 600;
   height: 1.5rem;
   justify-content: center;
+  letter-spacing: 0.1em;
   padding: 0.5rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -124,8 +125,8 @@ h4 {
 /* Footer */
 
 .footer {
-  height: 7.5rem;
   background-color: #100f0f;
+  height: 7.5rem;
 }
 
 .footer_link {
@@ -136,13 +137,13 @@ h4 {
 }
 
 .footer_items {
+  align-content: space-between;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  justify-content: space-between;
-  align-content: space-between;
-  width: 100%;
   height: 100%;
+  justify-content: space-between;
+  width: 100%;
   grid-template-areas:
     "top-left top-right"
     "bottom-left bottom-right";
@@ -183,13 +184,38 @@ h4 {
 /* Intro card */
 
 .intro_card_image{
-  height: 15rem;
-  width: 12rem;
-  padding: 2.5rem;
   border-radius: 5%;
+  height: 15rem;
+  padding: 2.5rem;
+  width: 12rem;
 }
 
 .intro_details{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.intro_details h2{
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.intro_details p{
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.intro_details p:nth-child(3){
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.intro_details .btn{
 }
