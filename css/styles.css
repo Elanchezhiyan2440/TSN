@@ -78,8 +78,24 @@ h4 {
 @media screen and (min-width: 700px) {
   .card {
     margin: 6rem 7rem;
+    max-width: 45%;
   }
 }
+
+@media screen and (min-width: 1020px) {
+  .card {
+    margin: 6rem 7rem;
+    max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card {
+    margin: 6rem 7rem;
+    max-width: 35%;
+  }
+}
+
 
 .card_green_div {
   background-color: #6b8763;
@@ -91,7 +107,7 @@ h4 {
 
 .list {
   list-style: none;
-  padding: none;
+  padding: 0;
   display: flex;
 }
 
@@ -222,4 +238,42 @@ h4 {
 
 .intro_details .button{
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 1020px) {
+  .intro_details h2{
+    font-size: 1.5rem;
+  }
+}
+
+/*personal card*/
+
+.personal .list{
+  flex-direction: column;
+  padding: 1rem 1rem 3rem 3rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.personal .list li{
+  padding: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.card_green_div li{
+  color: var(--color-font-white);
+}
+
+.card_green_div_arrow{
+  position: relative;
+  width: 0.5rem;
+  right: -0.4rem;
+  top: 1rem;
+}
+
+.personal .personalDetails{
+  flex-direction: column;
+  padding: 3rem 3rem 1rem 1rem;
+  margin: 0;
+  white-space: nowrap;
 }
